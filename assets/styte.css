@@ -71,17 +71,20 @@ h1.temp {
     text-transform: capitalize;
 }
 
-.weather.loading {
-    visibility: hidden;
-    max-height: 20px;
-    position: relative;
+.weather .message {
+    padding-left: 1.2em;
+    margin-top: 10px;
+    color: #cccccc;
 }
 
-.weather.loading::after {
-    visibility: visible;
-    content: "Loading...";
-    color: white;
-    position: absolute;
-    top: 0;
+.loading {
+    align-items: center;
+    padding-left: 1.1em;
+    margin-top: 10px;
+    display: flex;
+}
+
+.weather .content-loading {
+    margin-left: 2px;
 }
 
