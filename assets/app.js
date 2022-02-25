@@ -70,10 +70,12 @@ document.querySelector('.search button')
 
 document.querySelector('.search-bar')
     .addEventListener("keyup", (e) => {
-        if (document.querySelector('.search-bar').value == ''){
+        if(document.querySelector('.weather').querySelector('.city') == null) {
             document.querySelector('.weather').innerHTML = ""
         }
+
         if (e.key == 'Enter') {
             weather.search();
         }
+
     })
