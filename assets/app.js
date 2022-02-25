@@ -21,10 +21,10 @@ let weather = {
         const { icon, description } = data.weather[0];
         const { temp, humidity } = data.main;
         const { speed } = data.wind;
-        const { country } = data.sys;
+        // const { country } = data.sys;
 
         let htmlWeather = `
-        <h2 class="city">Weather in ${name}, ${country}</h2>
+        <h2 class="city">Weather in ${name}</h2>
             <div class="block-description">
                 <h1 class="temp">${temp.toFixed(1)}&deg;C</h1>
                 <img src="https://openweathermap.org/img/wn/${icon}@2x.png" alt="" class="icon">
